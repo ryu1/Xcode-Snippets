@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kiwi context</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    context(@"&lt;#context#&gt;", ^{
+        it(@"&lt;#it#&gt;", ^{
+            &lt;#code#&gt;
+        });
+
+        it(@"&lt;#it#&gt;", ^{
+            &lt;#code#&gt;
+        });
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2B331D53-0C4F-4A65-8890-6C1EDBD8899E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kiwi context</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
