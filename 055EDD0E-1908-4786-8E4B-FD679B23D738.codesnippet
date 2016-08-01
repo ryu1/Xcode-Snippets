@@ -2,18 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>NSLog</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"&lt;%@:%@:%d&gt;", NSStringFromClass([self class]), NSStringFromSelector(_cmd), __LINE__);</string>
+	<string>NSLog(@"(%s)&lt;%s:%d&gt;", [[NSThread currentThread] isMainThread] ? "MAIN": "NOT MAIN", __PRETTY_FUNCTION__, __LINE__);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>055EDD0E-1908-4786-8E4B-FD679B23D738</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSLog(@"&lt;%@:%@:%d&gt;",className,selectorName,lineNo)</string>
+	<string>NSLog(@"(%s)&lt;%s:%d&gt;",isMainThread, __PRETTY_FUNCTION__,lineNo)</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
