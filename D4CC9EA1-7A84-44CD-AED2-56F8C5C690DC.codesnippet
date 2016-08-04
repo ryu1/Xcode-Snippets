@@ -3,27 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kiwi context</string>
+	<string>kiwi beforeAll</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    context(@"&lt;#context#&gt;", ^{
-        it(@"&lt;#it#&gt;", ^{
+	<string>        beforeAll(^{
             &lt;#code#&gt;
-        });
-
-        it(@"&lt;#it#&gt;", ^{
-            &lt;#code#&gt;
-        });
-    });</string>
+        });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2B331D53-0C4F-4A65-8890-6C1EDBD8899E</string>
+	<string>D4CC9EA1-7A84-44CD-AED2-56F8C5C690DC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>kiwi context</string>
+	<string>kiwi beforeAll</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

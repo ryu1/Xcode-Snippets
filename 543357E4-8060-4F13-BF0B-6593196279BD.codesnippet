@@ -12,6 +12,8 @@
 	<string>#import &lt;Kiwi/Kiwi.h&gt;
 #import "&lt;#header#&gt;"
 
+SPEC_BEGIN(&lt;"class"&gt;Spec)
+
 describe(@"&lt;#describe#&gt;", ^{
     context(@"&lt;#context#&gt;", ^{
         it(@"&lt;#it#&gt;", ^{
@@ -22,7 +24,9 @@ describe(@"&lt;#describe#&gt;", ^{
             &lt;#code#&gt;
         });
     });
-});</string>
+});
+
+SPEC_END</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>543357E4-8060-4F13-BF0B-6593196279BD</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -32,6 +36,6 @@ describe(@"&lt;#describe#&gt;", ^{
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
