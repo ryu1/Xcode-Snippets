@@ -3,24 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>#if !__has_feature(objc_arc)</string>
+	<string>static const</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#if !__has_feature(objc_arc)
-#error This code needs compiler option -fobjc-arc
-#endif</string>
+	<string>static const &lt;#primitive type#&gt; &lt;#variable name#&gt; = &lt;#value#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B4DF983F-FBB6-4229-9574-1826AFA3B875</string>
+	<string>8D665D12-B870-4CE0-8BA2-E4BB2B501F4E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>#if !__has_feature(objc_arc)</string>
+	<string>static const primitive type</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
