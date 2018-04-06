@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>extern instance type *const</string>
+	<string>// MARK: - </string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extern &lt;#instance type#&gt; *const &lt;#variable name#&gt;;</string>
+	<string>// MARK: - &lt;#comment#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C70FA4C8-6724-4944-A894-741A89D2FC11</string>
+	<string>54628CD6-45B6-4AB7-8172-EE5271372ECF</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>extern instance type *const</string>
+	<string>MARK: - </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
