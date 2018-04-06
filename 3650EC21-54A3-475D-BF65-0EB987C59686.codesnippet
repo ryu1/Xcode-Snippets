@@ -17,6 +17,8 @@
     // MARK: - LifeCycle
     // MARK: - Public Methods
     // MARK: - Internal Methods
+    // MARK: - Classの継承 (最上位の親から子へ)
+    // MARK: - Protocolの継承 (最上位の親から子へ)
     // MARK: - Private Methods
     // MARK: - Segues</string>
 	<key>IDECodeSnippetIdentifier</key>
