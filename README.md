@@ -1,26 +1,73 @@
-# Xcode Snippets
+# Xcode Swift Code Snippets
 
-My collection of useful Xcode code snippets! It has been a great time-saver for me so I decided to share it with everyone :)
+I want to present some convenient code snippets I gathered for [Swift](https://developer.apple.com/swift/).
 
-## How to use
+### All snippets are updated to **Swift 4** ❤️
 
-- Go to your Xcode user's code snippets directory. Create one if it doesn't exist.
-  `open ~/Library/Developer/Xcode/UserData/CodeSnippets`
-- In that folder, you can either:
-  * run `git init`, then `git pull https://github.com/hlung/Xcode-Snippets` to that folder (recommended, easy update), OR...
-  * download ZIP of this repo, extract `.codesnippet` files to that folder
-- Restart Xcode.
-- Enjoy!
+## Inspiration
+I was inspired by Matt Thompson's [Xcode-Snippets](https://github.com/mattt/Xcode-Snippets) article and GitHub repo but I haven't found anything similar for Swift.
 
-**Note:** Each code snippet has a unique `IDECodeSnippetIdentifier` key, which Xcode generates when I created each snippet. There's a small chance that they will collide with your existing snippets. Fingers crossed.
+I also used [that thing in swift](https://thatthinginswift.com) and [SwiftSingleton](https://github.com/hpique/SwiftSingleton) as a sample implementations.
 
-## Creating your own Snippets
+## How to import all code snippets to Xcode
+All Xcode code snippets exist as a `.plist` files in `~/Library/Developer/Xcode/UserData/CodeSnippets/`
+You can simply copy all code snippets (`.codesnippet`) into this folder, restart Xcode and you should have all of them ready to use.
 
-In Xcode, open a workspace and toggle the right sidebar to be visible. On the bottom, there is a panel with four icons in the header. Click on the `{ }` icon to open the Code Snippets Library.
+Note: Create the folder if it doesn't exist already. It is created by Xcode when user adds his first custom snippet.
 
-Highlight your code block and drag it to the Code Snippet panel. Make sure to match the suggested platform, language, and completion scope.
+## Usage
+I named all snippets using scheme `Swift ...` and set all Completion Shortcuts to `swift-...` so each time you type `swift` in code editor you should see all snippets you can use in that place.
+
+![Xcode use Swift code snippets](https://raw.githubusercontent.com/burczyk/XcodeSwiftSnippets/master/assets/use.gif)
+
+## How to create your own snippets
+To add code snippet to Xcode expand **Utilities** right panel and press `{}` button (*Show the Code Snippet library*) in lower panel.
+Then select a code you would like to treat as a snippet, press and hold a left mouse button for a while and drag whole selection to the right panel (if you drag too early you'll probably only deselect text; you can also try dragging from a whitespace instead of the letter).
+
+![Xcode create code snippet](https://raw.githubusercontent.com/burczyk/XcodeSwiftSnippets/master/assets/create.gif)
+
+### Placeholder tokens
+If you want to add this nice placeholder in rounded blue rect simply put it between `<#` and `#>` and it will be transformed in both editor and final snippet.
+
+## Snippets
+Currently existing snippets (I hope they will be updated on a regular basis with your help :) ):
+
+```
+swift-documentdirectory              Document directory path snippet for Swift
+swift-dispatchafter                  GCD dispatch_after snippet for Swift
+
+swift-dispatchasync                  GCD dispatch_async snippet for Swift
+swift-nslocalizedstring              NSLocalizedString function snippet for Swift
+swift-dispatchmain                   GCD dispatch_async on main queue snippet for Swift
+swift-closuretypealias               Closure typealias with arguments and return value snippet for Swift
+swift-weak                           weakify self in closure
+swift-uitableviewdelegate            UITableViewDelegate snippet for Swift
+swift-forin                          for-in loop that casts objects inline
+swift-ibo                            Stub out IBOutlet
+swift-sortarrayofstrings             Swift String Array locale-aware sorting
+swift-prop                           Auto-Create property stub
+swift-closureoptionaltypealias       Optional closure typealiast with arguments and return value snippet for Swift
+swift-urlsession-delegate            Swift HTTP Request With Delegate set
+swift-message                        MFMessageComposeViewController snippet for Swift
+swift-uiviewcontrollerlifecycle      UIViewController lifecycle snippet for Swift
+swift-uicollectionviewdelegate       UICollectionViewDelegate snippet for Swift
+swift-uiremotenotification           UIRemoteNotification registration and handling snippet for Swift
+swift-mark                           Divider label for separating code into sections
+swift-didbecomeactive                UIApplicationDidBecomeActiveNotification observer snippet for Swift
+swift-urlsession-datatask            Swift Simple HTTP Request
+swift-mail                           MFMailComposeViewController snippet for Swift
+swift-iba                            Create IBAction method stub
+swift-uicollectionviewdatasource     UICollectionViewDataSource snippet for Swift
+swift-singleton                      Singleton pattern for Swift
+swift-uitableviewdatasource          UITableViewDataSource snippet for Swift
+swift-uiapplicationdelegate          Commonly used app life cycle methods
+swift-elegantmark                    Decorates mark statements and makes it neat when looking through items in File Jump Bar
+```
 
 
-## License
+## More snippets?
+This is a good start but I encourage you to create your own snippets or correct existing ones and create Pull Requests. Please provide plain snippets as `.plist` files so they can be easily imported.
+You can use `plist/generate_list.py` script to generate snippets list by running: `python generate_list.py`.
 
-[WTFPL](http://www.wtfpl.net/)
+## Do you like it?
+Do you like this repo? Share it on Twitter, Facebook, Google+ or anywhere you like so that more of us can use it and help. Thanks!
